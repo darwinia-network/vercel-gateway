@@ -1,0 +1,43 @@
+{
+  "redirects": [
+    { "source": "/bridger", "destination": "/bridger/bridge_traits/" },
+    { "source": "/bridger/", "destination": "/bridger/bridge_traits/" },
+    { "source": "/bridger/:match", "destination": "/bridger/:match/" },
+
+    { "source": "/darwinia-common", "destination": "/darwinia-common/drml/" },
+    { "source": "/darwinia-common/", "destination": "/darwinia-common/drml/" },
+    { "source": "/darwinia-common/:match", "destination": "/darwinia-common/:match/" },
+
+    { "source": "/darwinia", "destination": "/darwinia/darwinia/" },
+    { "source": "/darwinia/", "destination": "/darwinia/darwinia/" },
+    { "source": "/darwinia/:match", "destination": "/darwinia/:match/" }
+  ],
+  "rewrites": [
+    { "source": "/bridger/:match*/", "destination": "https://bridger.vercel.app/:match*" },
+    { "source": "/darwinia-common/:match*/", "destination": "https://darwinia-common.vercel.app/:match*" },
+    { "source": "/darwinia/:match*/", "destination": "https://darwinia.vercel.app/:match*" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=2592000"
+        }
+      ]
+    }
+  ]
+}
