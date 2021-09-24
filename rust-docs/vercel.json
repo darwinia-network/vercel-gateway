@@ -18,7 +18,7 @@
   "rewrites": [
     { "source": "/bridger/settings.html", "destination": "https://bridger.vercel.app/settings.html" },
     { "source": "/bridger/:match*/index.html", "destination": "https://bridger.vercel.app/:match*" },
-    { "source": "/bridger/:match*/", "destination": "https://bridger.vercel.app/:match*" },
+    { "source": "/bridger/:match*/", "destination": "https://bridger.vercel.app/:match*/" },
 
     { "source": "/darwinia-common/settings.html", "destination": "https://darwinia-common.vercel.app/settings.html" },
     { "source": "/darwinia-common/:match*/index.html", "destination": "https://darwinia-common.vercel.app/:match*" },
@@ -26,7 +26,7 @@
 
     { "source": "/darwinia/:match*/settings.html", "destination": "https://darwinia.vercel.app/settings.html" },
     { "source": "/darwinia/:match*/index.html", "destination": "https://darwinia.vercel.app/:match*" },
-    { "source": "/darwinia/:match*/", "destination": "https://darwinia.vercel.app/:match*" }
+    { "source": "/darwinia/:match*/", "destination": "https://darwinia.vercel.app/:match*/" }
   ],
   "headers": [
     {
