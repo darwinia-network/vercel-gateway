@@ -8,7 +8,7 @@
     { "source": "/darwinia-common/", "destination": "/darwinia-common/drml/" },
 
     { "source": "/darwinia", "destination": "/darwinia/darwinia/" },
-    { "source": "/darwinia/", "destination": "/darwinia/darwinia/" },
+    { "source": "/darwinia/", "destination": "/darwinia/darwinia/" }
   ],
   "rewrites": [
     { "source": "/bridger/:match*", "destination": "https://bridger.vercel.app/:match*" },
