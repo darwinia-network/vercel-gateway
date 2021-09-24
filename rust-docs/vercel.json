@@ -16,6 +16,7 @@
   ],
   "rewrites": [
     { "source": "/bridger/:match*", "destination": "https://bridger.vercel.app/:match*" },
+    { "source": "/bridger/:match*/", "destination": "https://bridger.vercel.app/:match*/" },
 
     { "source": "/darwinia-common/settings.html", "destination": "https://darwinia-common.vercel.app/settings.html" },
     { "source": "/darwinia-common/:match*/index.html", "destination": "https://darwinia-common.vercel.app/:match*" },
