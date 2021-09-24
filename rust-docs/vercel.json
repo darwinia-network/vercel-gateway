@@ -6,24 +6,18 @@
 
     { "source": "/darwinia-common", "destination": "/darwinia-common/drml/" },
     { "source": "/darwinia-common/", "destination": "/darwinia-common/drml/" },
-    { "source": "/darwinia-common/settings.html", "destination": "/darwinia-common/settings.html" },
-    { "source": "/darwinia-common/:match", "destination": "/darwinia-common/:match/" },
 
     { "source": "/darwinia", "destination": "/darwinia/darwinia/" },
     { "source": "/darwinia/", "destination": "/darwinia/darwinia/" },
-    { "source": "/darwinia/settings.html", "destination": "/darwinia/settings.html" },
-    { "source": "/darwinia/:match", "destination": "/darwinia/:match/" }
   ],
   "rewrites": [
     { "source": "/bridger/:match*", "destination": "https://bridger.vercel.app/:match*" },
     { "source": "/bridger/:match*/", "destination": "https://bridger.vercel.app/:match*/" },
 
-    { "source": "/darwinia-common/settings.html", "destination": "https://darwinia-common.vercel.app/settings.html" },
-    { "source": "/darwinia-common/:match*/index.html", "destination": "https://darwinia-common.vercel.app/:match*" },
-    { "source": "/darwinia-common/:match*/", "destination": "https://darwinia-common.vercel.app/:match*" },
+    { "source": "/darwinia-common/:match*", "destination": "https://darwinia-common.vercel.app/:match*" },
+    { "source": "/darwinia-common/:match*/", "destination": "https://darwinia-common.vercel.app/:match*/" },
 
-    { "source": "/darwinia/:match*/settings.html", "destination": "https://darwinia.vercel.app/settings.html" },
-    { "source": "/darwinia/:match*/index.html", "destination": "https://darwinia.vercel.app/:match*" },
+    { "source": "/darwinia/:match*", "destination": "https://darwinia.vercel.app/:match*" },
     { "source": "/darwinia/:match*/", "destination": "https://darwinia.vercel.app/:match*/" }
   ],
   "headers": [
