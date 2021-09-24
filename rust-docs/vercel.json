@@ -3,7 +3,6 @@
     { "source": "/bridger", "destination": "/bridger/bridge_traits/" },
     { "source": "/bridger/", "destination": "/bridger/bridge_traits/" },
     { "source": "/bridger/settings.html", "destination": "/bridger/settings.html" },
-    { "source": "/bridger/:match", "destination": "/bridger/:match/" },
 
     { "source": "/darwinia-common", "destination": "/darwinia-common/drml/" },
     { "source": "/darwinia-common/", "destination": "/darwinia-common/drml/" },
@@ -18,6 +17,7 @@
   "rewrites": [
     { "source": "/bridger/settings.html", "destination": "https://bridger.vercel.app/settings.html" },
     { "source": "/bridger/:match*/index.html", "destination": "https://bridger.vercel.app/:match*" },
+    { "source": "/bridger/:match(\\.*)", "destination": "https://bridger.vercel.app/:match*" },
     { "source": "/bridger/:match*/", "destination": "https://bridger.vercel.app/:match*/" },
 
     { "source": "/darwinia-common/settings.html", "destination": "https://darwinia-common.vercel.app/settings.html" },
