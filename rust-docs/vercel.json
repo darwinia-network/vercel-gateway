@@ -15,12 +15,7 @@
     { "source": "/darwinia/:match", "destination": "/darwinia/:match/" }
   ],
   "rewrites": [
-    { "source": "/bridger/:match*.html", "destination": "https://bridger.vercel.app/:match*.html" },
-    { "source": "/bridger/:match*.css", "destination": "https://bridger.vercel.app/:match*.css" },
-    { "source": "/bridger/:match*.js", "destination": "https://bridger.vercel.app/:match*.js" },
-    { "source": "/bridger/:match*.ttf", "destination": "https://bridger.vercel.app/:match*.ttf" },
-    { "source": "/bridger/:match*.otf", "destination": "https://bridger.vercel.app/:match*.otf" },
-    { "source": "/bridger/:match*/", "destination": "https://bridger.vercel.app/:match*/" },
+    { "source": "/bridger/:match*", "destination": "https://bridger.vercel.app/:match*" },
 
     { "source": "/darwinia-common/settings.html", "destination": "https://darwinia-common.vercel.app/settings.html" },
     { "source": "/darwinia-common/:match*/index.html", "destination": "https://darwinia-common.vercel.app/:match*" },
