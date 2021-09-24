@@ -2,7 +2,7 @@
   "redirects": [
     { "source": "/bridger", "destination": "/bridger/bridge_traits/" },
     { "source": "/bridger/", "destination": "/bridger/bridge_traits/" },
-    { "source": "/bridger/settings.html", "destination": "/bridger/settings.html" },
+    { "source": "/bridger/:match", "destination": "/bridger/:match/" },
 
     { "source": "/darwinia-common", "destination": "/darwinia-common/drml/" },
     { "source": "/darwinia-common/", "destination": "/darwinia-common/drml/" },
@@ -15,9 +15,11 @@
     { "source": "/darwinia/:match", "destination": "/darwinia/:match/" }
   ],
   "rewrites": [
-    { "source": "/bridger/settings.html", "destination": "https://bridger.vercel.app/settings.html" },
-    { "source": "/bridger/:match*/index.html", "destination": "https://bridger.vercel.app/:match*" },
-    { "source": "/bridger/:match(\\.*)", "destination": "https://bridger.vercel.app/:match*" },
+    { "source": "/bridger/*.html", "destination": "https://bridger.vercel.app/*.html" },
+    { "source": "/bridger/*.css", "destination": "https://bridger.vercel.app/*.css" },
+    { "source": "/bridger/*.js", "destination": "https://bridger.vercel.app/*.js" },
+    { "source": "/bridger/*.ttf", "destination": "https://bridger.vercel.app/*.ttf" },
+    { "source": "/bridger/*.otf", "destination": "https://bridger.vercel.app/*.otf" },
     { "source": "/bridger/:match*/", "destination": "https://bridger.vercel.app/:match*/" },
 
     { "source": "/darwinia-common/settings.html", "destination": "https://darwinia-common.vercel.app/settings.html" },
