@@ -1,8 +1,8 @@
 {
+  "trailingSlash": true,
   "redirects": [
     { "source": "/bridger", "destination": "/bridger/bridge_traits/" },
     { "source": "/bridger/", "destination": "/bridger/bridge_traits/" },
-    { "source": "/bridger/:match", "destination": "/bridger/:match/" },
 
     { "source": "/darwinia-common", "destination": "/darwinia-common/drml/" },
     { "source": "/darwinia-common/", "destination": "/darwinia-common/drml/" },
