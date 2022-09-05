@@ -4,6 +4,9 @@ on:
   push:
     branches: [ master ]
 
+env:
+  VERCEL_ORG: itering
+
 jobs:
   deploy:
     name: Deploy
@@ -20,5 +23,12 @@ jobs:
       - name: Deploy rust docs
         run: |
           cd rust-docs
-          vercel --token ${{ secrets.VERCEL_TOKEN }} --scope itering link --confirm
-          vercel --token ${{ secrets.VERCEL_TOKEN }} --scope itering deploy --prod
+          vercel --token ${{ secrets.VERCEL_TOKEN }} --scope ${VERCEL_ORG} link --confirm
+          vercel --token ${{ secrets.VERCEL_TOKEN }} --scope ${VERCEL_ORG} deploy --prod
+
+      - name: Deploy forward camp
+        run: |
+          cd forward-camp
+          vercel --token ${{ secrets.VERCEL_TOKEN }} --scope ${VERCEL_ORG} link --confirm
+          vercel --token ${{ secrets.VERCEL_TOKEN }} --scope ${VERCEL_ORG} deploy --prod
+

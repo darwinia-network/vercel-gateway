@@ -1,0 +1,16 @@
+{
+    "trailingSlash": true,
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://helixbridge.app/apps",
+            "has": [
+                {
+                  "type": "header",
+                  "key": "origin",
+                  "value": "test.kahub.in"
+                }
+            ]
+        }
+    ]
+}
