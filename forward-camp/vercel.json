@@ -11,6 +11,28 @@
                   "value": "apps.helixbridge.app"
                 }
             ]
+        },
+        {
+            "source": "/",
+            "destination": "https://www.itering.io",
+            "has": [
+                {
+                  "type": "header",
+                  "key": "host",
+                  "value": "itering.com"
+                }
+            ]
+        },
+        {
+            "source": "/",
+            "destination": "https://www.itering.io",
+            "has": [
+                {
+                  "type": "header",
+                  "key": "host",
+                  "value": "www.itering.com"
+                }
+            ]
         }
     ]
 }
