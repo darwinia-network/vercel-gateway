@@ -7,7 +7,7 @@
             "has": [
                 {
                   "type": "header",
-                  "key": "origin",
+                  "key": "host",
                   "value": "apps.helixbridge.app"
                 }
             ]
