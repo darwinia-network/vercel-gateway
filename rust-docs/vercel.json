@@ -8,7 +8,6 @@
     { "source": "/darwinia/", "destination": "/darwinia/darwinia/" }
   ],
   "rewrites": [
-    { "source": "/bridger", "destination": "https://bridger.vercel.app/" },
     { "source": "/bridger/:match*", "destination": "https://bridger.vercel.app/:match*" },
     { "source": "/bridger/:match*/", "destination": "https://bridger.vercel.app/:match*/" },
 
