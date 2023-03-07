@@ -42,7 +42,13 @@
                     "type": "header",
                     "key": "host",
                     "value": "crab.network"
-                },
+                }
+            ]
+        },
+        {
+            "source": "/",
+            "destination": "https://darwinia.network",
+            "has": [
                 {
                     "type": "header",
                     "key": "host",
