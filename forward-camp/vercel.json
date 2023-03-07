@@ -33,6 +33,28 @@
                   "value": "www.itering.com"
                 }
             ]
+        },
+        {
+            "source": "/",
+            "destination": "https://darwinia.network",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "host",
+                    "value": "crab.network"
+                }
+            ]
+        },
+        {
+            "source": "/",
+            "destination": "https://docs.darwinia.network",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "host",
+                    "value": "docs.crab.network"
+                }
+            ]
         }
     ]
 }
