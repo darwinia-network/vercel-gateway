@@ -42,6 +42,11 @@
                     "type": "header",
                     "key": "host",
                     "value": "crab.network"
+                },
+                {
+                    "type": "header",
+                    "key": "host",
+                    "value": "www.crab.network"
                 }
             ]
         },
