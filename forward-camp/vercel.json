@@ -57,8 +57,8 @@
             ]
         },
         {
-            "source": "/",
-            "destination": "https://docs.darwinia.network",
+            "source": "/:match*",
+            "destination": "https://docs.darwinia.network/:match*",
             "has": [
                 {
                     "type": "header",
