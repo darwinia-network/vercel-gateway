@@ -57,13 +57,24 @@
             ]
         },
         {
-            "source": "/:match*",
-            "destination": "https://docs.darwinia.network/:match*",
+            "source": "/",
+            "destination": "https://docs.darwinia.network",
             "has": [
                 {
                     "type": "header",
                     "key": "host",
                     "value": "docs.crab.network"
+                }
+            ]
+        },
+        {
+            "source": "/",
+            "destination": "https://collator-staking.darwinia.network",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "host",
+                    "value": "staking.darwinia.network"
                 }
             ]
         }
